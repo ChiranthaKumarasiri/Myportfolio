@@ -1,0 +1,225 @@
+
+:root {
+    --main-color: #005cac;
+    --dark-color: #222;
+    --light-color: #fff;
+    --font-color: #333;
+    --transition: 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%; 
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--font-color);
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8rem 2rem;
+    width: 25rem;
+    text-align: center;
+    z-index: 1000;
+}
+
+header .logo {
+    color: var(--light-color);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header .logo span {
+    color: var(--main-color);
+}
+
+header .navbar a {
+    display: block;
+    color: var(--light-color);
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    color: var(--main-color);
+    transform: scale(1.1);
+}
+
+header .follow a {
+    font-size: 2rem;
+    color: var(--light-color);
+    margin: 0 0.5rem;
+}
+
+header .follow a:hover {
+    color: var(--main-color);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    min-height: 100vh;
+    margin-left: 25rem;
+}
+
+.home .content {
+    flex: 1;
+}
+
+.home .content .hi {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    color: var(--dark-color);
+}
+
+.home .content h3 span {
+    color: var(--main-color);
+}
+
+.home .content .info {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.home .content .btn {
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--light-color);
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.home .content .btn:hover {
+    background: var(--dark-color);
+    color: var(--main-color);
+}
+
+.home .image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .image img {
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+.about {
+    margin-left: 25rem;
+    padding: 5rem 2rem;
+    background: var(--light-color);
+}
+
+.about .heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+}
+
+.about .heading span {
+    color: var(--main-color);
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.about .row .image {
+    flex: 1 1 40%;
+}
+
+.about .row .image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about .row .content {
+    flex: 1 1 50%;
+}
+
+.about .row .content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--font-color);
+}
+
+.about .row .box-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.about .row .box-container .box {
+    flex: 1;
+}
+
+.about .row .box-container .box span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.about .row .btn {
+    background: var(--main-color);
+    color: var(--light-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.about .row .btn:hover {
+    background: var(--dark-color);
+    color: var(--main-color);
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--dark-color);
+    color: var(--light-color);
+}
